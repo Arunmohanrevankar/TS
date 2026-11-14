@@ -1,0 +1,78 @@
+Step 1: Install Node.js
+Download and install Node.js from:https://nodejs.org/en/download
+Run the .msi installer and complete the installation with the default options.
+
+Step 2: Open PowerShell as Administrator
+Search for PowerShell → Right Click → Run as Administrator
+
+Step 3: Enable Script Execution
+Run:PowerShell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+When prompted, type:Y
+and press Enter.
+
+Step 4: Verify Node.js Installation
+Check Node.js version:
+PowerShell
+node -v
+
+Check npm version:
+PowerShell
+npm -v
+
+Example:
+Plain Text
+v22.x.x
+10.x.x
+
+
+Step 5: Install TypeScript Globally
+PowerShell
+npm install -g typescript
+
+Verify:
+PowerShell
+tsc -v
+
+
+Step 6: Create a Project Folder
+
+Navigate to any drive or location where you want your project.
+
+Example:PowerShell
+D:
+mkdir ProTypeScript
+cd ProTypeScript
+
+Current location:
+D:\ProTypeScript
+
+
+Step 7: Initialize npm Project
+PowerShell
+
+npm init -y
+npm install --save-dev typescript
+npx tsc --init
+
+You should now see:
+D:\ProTypeScript
+│
+├── node_modules
+├── package.json
+├── package-lock.json
+└── tsconfig.json
+
+Step 8: Create Your First TypeScript File
+Create:app.ts
+
+
+Step 9: Compile TypeScript
+PowerShell
+tsc app.ts
+
+
+Step 10: Run the JavaScript
+PowerShell
+node app.js
